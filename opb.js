@@ -9,3 +9,29 @@ function main() {
 }
 
 main();
+
+  //segunda parte
+
+  class Coche {
+    constructor(numPuertas) {
+      this.numPuertas = numPuertas;
+    }
+  
+    // Función que incrementa el número de puertas en 1
+    añadirPuerta() {
+      this.numPuertas += 1;
+    }
+  }
+  
+  function main() {
+    // Creamos un nuevo objeto miCoche con 2 puertas
+    let miCoche = new Coche(2);
+  
+    // Añadimos una puerta al coche
+    miCoche.añadirPuerta();
+  
+    // Mostramos el número de puertas que tiene el coche
+    console.log(miCoche.numPuertas); // debería mostrar 3
+  }
+  
+  main();
